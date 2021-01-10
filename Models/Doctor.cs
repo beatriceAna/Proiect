@@ -11,10 +11,10 @@ namespace Proiect_Beatrice_Ana.Models
     {
         public int ID { get; set; }
         public string Code { get; set; }
-        [RegularExpression(@"^[A-Z][a-z]+\s[A-Z][a-z]+$", ErrorMessage = "Prenumele medicului trebuie sa fie de forma 'Prenume' "), Required]
+        [RegularExpression(@"^[A-Z][a-z]+$", ErrorMessage = "Prenumele medicului trebuie sa contina doar litere "), Required]
         [Display(Name = "First Name")]
         public string FirstName { get; set; }
-        [RegularExpression(@"^[A-Z][a-z]+\s[A-Z][a-z]+$", ErrorMessage = "Numele medicului trebuie sa fie de forma 'Nume' "), Required]
+        [RegularExpression(@"^[A-Z][a-z]+$", ErrorMessage = "Numele medicului trebuie sa contina doar litere "), Required]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
         public bool Available { get; set; }
